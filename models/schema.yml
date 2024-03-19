@@ -5,6 +5,7 @@ sources:
     schema: gz_raw_data
     description: Greenwez raw data
     tables:
+
       - name: sales
         freshness:
           warn_after: {count: 90, period: day}
@@ -51,5 +52,4 @@ sources:
             description: preparation cost
           - name: ship_cost
             description: shipping fees paid by Greenwez 
-
 
