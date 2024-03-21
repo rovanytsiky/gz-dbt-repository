@@ -52,4 +52,87 @@ sources:
             description: preparation cost
           - name: ship_cost
             description: shipping fees paid by Greenwez 
-
+      - name: adwords
+        description: raw data for adwords
+        identifier: raw_gz_adwords
+        columns:
+          - name: date_date
+            description: date of adwords campaign launch
+          - name: paid_source
+            description: campaign source from adwords
+          - name: campaign_key
+            description: primary key
+            tests:
+              - unique
+              - not_null
+          - name: camPGN_name
+            description: adwords campaign name
+          - name: ads_cost
+            description: cost of ads campaign
+          - name: impression
+            description: number of impression per campaign 
+          - name: click
+            description: number of click per campaign
+      - name: bing
+        description: raw data for bing
+        identifier: raw_gz_bing
+        columns:
+          - name: date_date
+            description: date of bing campaign launch
+          - name: paid_source
+            description: campaign source from bing
+          - name: campaign_key
+            description: primary key
+            tests:
+              - unique
+              - not_null
+          - name: camPGN_name
+            description: bing campaign name
+          - name: ads_cost
+            description: cost of ads campaign
+          - name: impression
+            description: number of impression per campaign 
+          - name: click
+            description: number of click per campaign
+      - name: criteo
+        description: raw data for criteo
+        identifier: raw_gz_criteo
+        columns:
+          - name: date_date
+            description: date of criteo campaign launch
+          - name: paid_source
+            description: campaign source from criteo
+          - name: campaign_key
+            description: primary key
+            tests:
+              - unique
+              - not_null
+          - name: camPGN_name
+            description: criteo campaign name
+          - name: ads_cost
+            description: cost of ads campaign
+          - name: impression
+            description: number of impression per campaign 
+          - name: click
+            description: number of click per campaign   
+      - name: facebook
+        description: raw data for facebook
+        identifier: raw_gz_facebook
+        columns:
+          - name: date_date
+            description: date of facebook campaign launch
+          - name: paid_source
+            description: campaign source from facebook
+          - name: campaign_key
+            description: primary key
+            tests:
+              - unique
+              - not_null
+          - name: camPGN_name
+            description: facebook campaign name
+          - name: ads_cost
+            description: cost of ads campaign
+          - name: impression
+            description: number of impression per campaign 
+          - name: click
+            description: number of click per campaign 
